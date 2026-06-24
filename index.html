@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo_icon/automacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Automação Industrial | Componentes</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <i class="fa-solid fa-industry header-icon"></i>
+            <div class="header-text">
+                <h1>Automação Industrial</h1>
+                <p class="header-sub">Integração de Sensores e Componentes</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="nav-btn active" onclick="navegar('home')">
+            <i class="fa-solid fa-house"></i> Home
+        </button>
+        <button class="nav-btn" onclick="navegar('disjuntor')">
+            <i class="fa-solid fa-bolt"></i> Disjuntor
+        </button>
+        <button class="nav-btn" onclick="navegar('contator')">
+            <i class="fa-solid fa-plug"></i> Contator
+        </button>
+        <button class="nav-btn" onclick="navegar('botoeira')">
+            <i class="fa-solid fa-circle-dot"></i> Botoeira
+        </button>
+        <button class="nav-btn" onclick="navegar('chave')">
+            <i class="fa-solid fa-toggle-on"></i> Chave Manopla
+        </button>
+        <button class="nav-btn" onclick="navegar('sensorFC')">
+            <i class="fa-solid fa-location-crosshairs"></i> Sensor FC
+        </button>
+        <button class="nav-btn" onclick="navegar('motor')">
+            <i class="fa-solid fa-gear"></i> Motor Trifásico
+        </button>
+        <button class="nav-btn" onclick="navegar('multimetro')">
+            <i class="fa-solid fa-gauge-high"></i> Multímetro
+        </button>
+        <button class="nav-btn" onclick="navegar('releTemp')">
+            <i class="fa-solid fa-clock"></i> Relé Temporizador
+        </button>
+        <button class="nav-btn" onclick="navegar('disMotor')">
+            <i class="fa-solid fa-shield-halved"></i> Disjuntor Motor
+        </button>
+        <button class="nav-btn" onclick="navegar('releTermico')">
+            <i class="fa-solid fa-temperature-high"></i> Relé Térmico
+        </button>
+    </nav>
+
+    <main>
+
+        <!-- ===== HOME ===== -->
+        <section id="home" class="active">
+            <h2><i class="fa-solid fa-house"></i> Bem-vindo ao Estudo de Automação Industrial</h2>
+
+            <div class="home-intro">
+                <p>
+                    Este site reúne os principais componentes utilizados em sistemas de automação e controle elétrico industrial.
+                    Aqui você vai encontrar explicações claras sobre o funcionamento, aplicações e características de cada elemento
+                    — desde dispositivos de proteção como disjuntores e relés, até elementos de comando como botoeiras e sensores.
+                    O conteúdo é voltado para estudantes e profissionais das áreas de eletrotécnica, mecatrônica e automação.
+                </p>
+            </div>
+
+            <h3><i class="fa-solid fa-table-cells-large" style="color:var(--blue-light)"></i> Componentes disponíveis</h3>
+
+            <div class="home-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Disjuntor</h4>
+                    <p>Dispositivo de proteção que interrompe automaticamente o circuito em casos de sobrecarga ou curto-circuito.</p>
+                    <button class="card-btn" onclick="navegar('disjuntor')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h4>Contator</h4>
+                    <p>Elemento eletromecânico responsável pelo acionamento de cargas elétricas de alta potência via comando elétrico.</p>
+                    <button class="card-btn" onclick="navegar('contator')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-circle-dot"></i></div>
+                    <h4>Botão de Pulso</h4>
+                    <p>Dispositivo de comando manual que envia sinais momentâneos para acionar ou interromper circuitos industriais.</p>
+                    <button class="card-btn" onclick="navegar('botoeira')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-toggle-on"></i></div>
+                    <h4>Chave Manopla</h4>
+                    <p>Interruptor rotativo utilizado para seleção de modos e controle manual em painéis elétricos industriais.</p>
+                    <button class="card-btn" onclick="navegar('chave')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                    <h4>Sensor Fim de Curso</h4>
+                    <p>Detecta os limites de movimento de máquinas e equipamentos, garantindo segurança e controle de posição.</p>
+                    <button class="card-btn" onclick="navegar('sensorFC')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h4>Motor Trifásico</h4>
+                    <p>Máquina que converte energia elétrica trifásica em movimento mecânico, base da maioria dos processos industriais.</p>
+                    <button class="card-btn" onclick="navegar('motor')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h4>Multímetro</h4>
+                    <p>Instrumento de medição elétrica capaz de verificar tensão, corrente e resistência em um único aparelho.</p>
+                    <button class="card-btn" onclick="navegar('multimetro')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h4>Relé Temporizador</h4>
+                    <p>Controla o acionamento e desligamento de circuitos com base em intervalos de tempo pré-programados.</p>
+                    <button class="card-btn" onclick="navegar('releTemp')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Disjuntor Motor</h4>
+                    <p>Protetor específico para motores elétricos, combinando proteção termomagnética e acionamento direto.</p>
+                    <button class="card-btn" onclick="navegar('disMotor')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-temperature-high"></i></div>
+                    <h4>Relé Térmico</h4>
+                    <p>Protege motores contra superaquecimento causado por sobrecarga elétrica prolongada, preservando o equipamento.</p>
+                    <button class="card-btn" onclick="navegar('releTermico')">Acessar</button>
+                </div>
+            </div>
+
+            <div class="home-footer-info">
+                <h3><i class="fa-solid fa-triangle-exclamation"></i> Estrutura dos Sistemas de Automação</h3>
+                <div class="three-cols">
+                    <div class="col-info">
+                        <div class="col-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <strong>Sensores</strong>
+                        <p>Responsáveis por captar informações do ambiente físico, como posição, temperatura e presença.</p>
+                    </div>
+                    <div class="col-info">
+                        <div class="col-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <strong>Controladores</strong>
+                        <p>O "cérebro" do sistema — processam os dados dos sensores e definem as ações a executar.</p>
+                    </div>
+                    <div class="col-info">
+                        <div class="col-icon"><i class="fa-solid fa-robot"></i></div>
+                        <strong>Atuadores</strong>
+                        <p>Executam fisicamente os comandos do controlador: motores, válvulas, relés e cilindros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marcas-section">
+                <h3>Principais Fabricantes do Setor</h3>
+                <div class="marcas-grid">
+                    <a href="https://www.weg.net" target="_blank" class="marca-card">
+                        <i class="fa-solid fa-industry"></i>
+                        <div>
+                            <span>WEG</span>
+                            <small>Brasil</small>
+                        </div>
+                    </a>
+                    <a href="https://www.siemens.com/br" target="_blank" class="marca-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <div>
+                            <span>Siemens</span>
+                            <small>Alemanha</small>
+                        </div>
+                    </a>
+                    <a href="https://www.se.com/br" target="_blank" class="marca-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <span>Schneider Electric</span>
+                            <small>França</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DISJUNTOR ===== -->
+        <section id="disjuntor">
+            <h2><i class="fa-solid fa-bolt"></i> Disjuntor</h2>
+            <p class="sec-desc">Dispositivo de segurança eletromecânico projetado para proteger instalações elétricas contra falhas.</p>
+
+            <div class="img-gallery">
+                <img src="./img/disjuntor/disjuntor1.png" alt="Disjuntor vista 1">
+                <img src="./img/disjuntor/disjuntor2.png" alt="Disjuntor vista 2">
+                <img src="./img/disjuntor/disjuntor3.png" alt="Disjuntor vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O disjuntor é um equipamento de proteção elétrica que monitora continuamente a corrente que percorre
+                    um circuito. Quando essa corrente ultrapassa os valores seguros — seja por sobrecarga gradual ou por
+                    um curto-circuito repentino — o dispositivo age automaticamente, abrindo o circuito e interrompendo
+                    o fornecimento de energia antes que danos ocorram.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Proteção contra curto-circuito;</li>
+                    <li><i class="fa-solid fa-check"></i> Proteção contra sobrecarga de corrente;</li>
+                    <li><i class="fa-solid fa-check"></i> Possibilidade de desligamento manual;</li>
+                    <li><i class="fa-solid fa-check"></i> Aplicação em ambientes residenciais, comerciais e industriais.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/disjuntor/disjuntor-funcionamento.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Ao detectar anomalia elétrica, o mecanismo bimetálico ou eletromagnético interno atua, desconectando o circuito de forma segura e precisa.</p>
+                            <a href="https://www.mundodaeletrica.com.br/como-funcionam-os-disjuntores/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/disjuntor/disjuntor-aplicacao.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Presente em quadros de distribuição elétrica, painéis industriais e instalações prediais para garantir a segurança da rede elétrica.</p>
+                            <a href="https://www.margirius.com.br/blog/disjuntores-entenda-sua-importancia-e-saiba-como-funcionam/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/disjuntor/disjuntor-vantagens.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Diferente de fusíveis, o disjuntor pode ser rearmado após a atuação, eliminando a necessidade de substituição e reduzindo custos de manutenção.</p>
+                            <a href="https://www.aitefuse.com/pt/news/what-are-the-advantages-and-disadvantages-of-circuit-breaker" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>WEG, Siemens e Schneider Electric são referências mundiais na produção de disjuntores, oferecendo soluções confiáveis para proteção elétrica em todos os segmentos.</p>
+                <img src="./img/logo_icon/empresas_logos_disjuntor.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_empresas_logos_disjuntor.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== CONTATOR ===== -->
+        <section id="contator">
+            <h2><i class="fa-solid fa-plug"></i> Contator</h2>
+            <p class="sec-desc">Dispositivo eletromecânico para acionamento e desligamento de cargas elétricas de potência.</p>
+
+            <div class="img-gallery">
+                <img src="./img/contator/contator1.png" alt="Contator vista 1">
+                <img src="./img/contator/contator2.png" alt="Contator vista 2">
+                <img src="./img/contator/contator3.png" alt="Contator vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O contator é um dos componentes mais utilizados em painéis de comando elétrico e automação industrial.
+                    Ele funciona como um interruptor de alta potência acionado por um sinal elétrico de baixa tensão (bobina),
+                    que energiza um eletroímã e fecha os contatos principais, permitindo que grandes cargas — como motores —
+                    sejam ligadas e desligadas de forma segura e controlada remotamente.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Acionamento de motores elétricos e bombas;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de cargas de alta corrente;</li>
+                    <li><i class="fa-solid fa-check"></i> Integração com circuitos de comando e proteção;</li>
+                    <li><i class="fa-solid fa-check"></i> Longa vida útil em operações frequentes.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/contator/contator-funcionamento.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Uma bobina eletromagnética recebe sinal de comando e fecha os contatos de potência, energizando a carga conectada com segurança.</p>
+                            <a href="https://www.nepin.com.br/blog/solucoes-industriais/o-que-e-um-contator-eletrico/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/contator/contator-aplicacao.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Amplamente usado no comando de motores elétricos, ventiladores, compressores, esteiras transportadoras e sistemas de aquecimento industrial.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/contator/contator-vantagens.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Proporciona isolamento elétrico entre o circuito de comando e o de potência, maior segurança operacional e elevada confiabilidade ao longo do tempo.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Referências globais como WEG, Siemens e Schneider Electric oferecem linhas completas de contatores para aplicações industriais de todos os portes.</p>
+                <img src="./img/logo_icon/empresas_logos_contator.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_empresas_logos_contator.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== BOTOEIRA ===== -->
+        <section id="botoeira">
+            <h2><i class="fa-solid fa-circle-dot"></i> Botão de Pulso (Botoeira)</h2>
+            <p class="sec-desc">Dispositivo de comando manual que gera sinais momentâneos em circuitos de automação.</p>
+
+            <div class="img-gallery">
+                <img src="./img/botoeira/btn_pulso1.png" alt="Botoeira vista 1">
+                <img src="./img/botoeira/btn_pulso2.png" alt="Botoeira vista 2">
+                <img src="./img/botoeira/btn_pulso3.png" alt="Botoeira vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    A botoeira, ou botão de pulso, é o principal elemento de comando manual em sistemas elétricos industriais.
+                    Ao ser pressionada, ela fecha (ou abre) temporariamente um contato elétrico — o sinal existe apenas enquanto
+                    o operador mantém o dedo sobre ela. Assim que solta, o contato retorna à posição original.
+                    Esse tipo de acionamento é ideal para partidas e paradas de motores, pois garante controle deliberado e evita
+                    acionamentos acidentais permanentes.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Comando manual de máquinas e equipamentos;</li>
+                    <li><i class="fa-solid fa-check"></i> Acionamento de partidas e paradas de motores;</li>
+                    <li><i class="fa-solid fa-check"></i> Integração com circuitos de contator e CLP;</li>
+                    <li><i class="fa-solid fa-check"></i> Disponível em versões NA (Normalmente Aberto) e NF (Normalmente Fechado).</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/botoeira/btn_pulso-funcionamento.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Enquanto pressionado, fecha o contato elétrico enviando sinal ao circuito. Ao ser liberado, retorna automaticamente à posição original.</p>
+                            <a href="https://www.nepin.com.br/blog/solucoes-industriais/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/botoeira/btn_pulso-aplicacao.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Utilizado em partidas de motores, paradas de emergência, acionamento de esteiras e controle de posicionamento em automação industrial.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/botoeira/btn_pulso-vantagens.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Operação simples, resposta imediata ao toque, alta confiabilidade e fácil substituição em painéis de comando industrial.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>WEG, Siemens e Schneider Electric são fabricantes reconhecidos pela qualidade e variedade de botoeiras para uso industrial.</p>
+                <img src="./img/logo_icon/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== CHAVE MANOPLA ===== -->
+        <section id="chave">
+            <h2><i class="fa-solid fa-toggle-on"></i> Chave Manopla</h2>
+            <p class="sec-desc">Seletor rotativo para controle e seleção de modos em sistemas elétricos e de automação.</p>
+
+            <div class="img-gallery">
+                <img src="./img/chave/chaveM1.png" alt="Chave Manopla vista 1">
+                <img src="./img/chave/chaveM2.png" alt="Chave Manopla vista 2">
+                <img src="./img/chave/chaveM3.png" alt="Chave Manopla vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    A chave manopla — também chamada de chave seletora ou de retenção — é um dispositivo de comando
+                    que mantém a posição escolhida pelo operador mesmo após soltar o comando. Ao contrário do botão
+                    de pulso, ela "trava" na posição selecionada, sendo ideal para escolher modos de operação como
+                    manual/automático, ligar/desligar definitivamente, ou selecionar diferentes funções em um painel
+                    elétrico industrial.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Seleção de modos de operação (manual/automático);</li>
+                    <li><i class="fa-solid fa-check"></i> Comando de equipamentos com retenção de posição;</li>
+                    <li><i class="fa-solid fa-check"></i> Aplicação em painéis e quadros elétricos industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Disponível em 2 ou mais posições fixas.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/chave/chaveM-funcionamento.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Ao girar a manopla para uma posição, os contatos internos mudam de estado e permanecem assim, mantendo o circuito correspondente ativo.</p>
+                            <a href="https://www.nepin.com.br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/chave/chaveM-aplicacao.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usada em painéis de controle para alternar entre modos operacionais, como ligar/desligar equipamentos ou selecionar velocidades de motores.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/chave/chaveM-vantagens.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Retenção de posição evita acionamentos acidentais, oferece interface intuitiva e durabilidade elevada em ambientes industriais.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Empresas como WEG, Siemens e Schneider Electric produzem chaves manopla com alto padrão de qualidade para aplicações industriais severas.</p>
+                <img src="./img/logo_icon/empresas_logos_btn_chaveM.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_empresas_logos_chaveM.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR FIM DE CURSO ===== -->
+        <section id="sensorFC">
+            <h2><i class="fa-solid fa-location-crosshairs"></i> Sensor Fim de Curso</h2>
+            <p class="sec-desc">Sensor de posição que detecta o limite físico do movimento de máquinas e equipamentos.</p>
+
+            <div class="img-gallery">
+                <img src="./img/sensorFC/slide1_sensorFimCurso.png" alt="Sensor FC vista 1">
+                <img src="./img/sensorFC/slide2_sensorFimCurso.png" alt="Sensor FC vista 2">
+                <img src="./img/sensorFC/slide3_sensorFimCurso.png" alt="Sensor FC vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O sensor fim de curso (ou limit switch) é um dispositivo eletromecânico que detecta quando uma
+                    parte móvel de uma máquina atingiu uma posição determinada. Ao contato físico — ou pela aproximação
+                    magnética, no caso dos modelos indutivos — o sensor muda o estado de seus contatos elétricos,
+                    enviando um sinal ao controlador do sistema. Esse sinal pode parar um motor, reverter um movimento
+                    ou acionar um alarme de segurança.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Detecção de limites de movimento em esteiras e transportadores;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de posição em máquinas industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Acionamento de funções de segurança;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitoramento de portas e tampos automáticos.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/sensorFC/card1_sensorFC.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>O contato mecânico com o atuador do sensor altera o estado dos contatos elétricos, gerando o sinal de limite para o sistema de controle.</p>
+                            <a href="https://www.nepin.com.br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorFC/card2_sensorFC.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Presente em linhas de produção, robótica, máquinas CNC, portas automáticas e sistemas de posicionamento com alta precisão.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorFC/card3_sensorFC.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Custo acessível, resposta confiável, compatibilidade com CLPs e controladores industriais, e disponível em versões para ambientes agressivos.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Fabricantes como WEG, Siemens, Schneider Electric e Omron são referências em sensores fim de curso para automação industrial.</p>
+                <img src="./img/logo_icon/logos_SensorFC.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_empresas_logos_SensorFC.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== MOTOR TRIFÁSICO ===== -->
+        <section id="motor">
+            <h2><i class="fa-solid fa-gear"></i> Motor Elétrico Trifásico</h2>
+            <p class="sec-desc">Máquina que converte energia elétrica trifásica em energia mecânica rotativa.</p>
+
+            <div class="img-gallery">
+                <img src="./img/motorTF/slide1_motortrifase.png" alt="Motor Trifásico vista 1">
+                <img src="./img/motorTF/slide2_motortrifase.png" alt="Motor Trifásico vista 2">
+                <img src="./img/motorTF/slide3_motortrifase.png" alt="Motor Trifásico vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O motor elétrico trifásico de indução é o tipo de máquina mais utilizado na indústria.
+                    Ele opera com três fases de corrente alternada defasadas entre si em 120°, o que cria um
+                    campo magnético girante no estator. Esse campo induz correntes no rotor, gerando o torque
+                    que produz o movimento mecânico. Por não necessitar de escovas ou anéis coletores,
+                    o motor de indução é extremamente robusto, de baixa manutenção e altíssima confiabilidade.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Converte energia elétrica em movimento mecânico rotativo;</li>
+                    <li><i class="fa-solid fa-check"></i> Aplicado em bombas, compressores e ventiladores industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Alta eficiência energética em operação contínua;</li>
+                    <li><i class="fa-solid fa-check"></i> Manutenção simples e longa vida útil.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/motorTF/card1_motor.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>O campo magnético girante criado pelas três fases induz corrente no rotor, gerando força eletromagnética que resulta em torque e rotação.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/motorTF/card2_motor.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Presente em máquinas industriais, esteiras, agitadores, elevadores de carga, compressores e praticamente todo equipamento industrial com movimento.</p>
+                            <a href="https://www.siemens.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/motorTF/card3_motor.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Alto rendimento, robustez mecânica, operação silenciosa e compatibilidade com inversores de frequência para controle de velocidade.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>WEG se destaca como maior fabricante de motores elétricos da América Latina, ao lado de Siemens e Schneider Electric no mercado global.</p>
+                <img src="./img/motorTF/logos.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/motorTF/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== MULTÍMETRO ===== -->
+        <section id="multimetro">
+            <h2><i class="fa-solid fa-gauge-high"></i> Multímetro</h2>
+            <p class="sec-desc">Instrumento de medição elétrica que verifica tensão, corrente e resistência em um único aparelho.</p>
+
+            <div class="img-gallery">
+                <img src="./img/multi/slide1_multi.png" alt="Multímetro vista 1">
+                <img src="./img/multi/slide2_multi.png" alt="Multímetro vista 2">
+                <img src="./img/multi/slide3_multi.png" alt="Multímetro vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O multímetro é a ferramenta mais versátil do técnico eletricista. Com ele é possível medir
+                    grandezas fundamentais como tensão elétrica (V), corrente (A) e resistência (Ω) — e nos modelos
+                    mais avançados, também capacitância, frequência e temperatura. O operador seleciona a grandeza
+                    desejada no seletor rotativo, conecta as ponteiras de teste ao circuito e lê o valor exibido
+                    no display. A ponteira vermelha vai ao terminal positivo e a preta ao terminal COM (negativo).
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Medição de tensão AC e DC;</li>
+                    <li><i class="fa-solid fa-check"></i> Medição de corrente elétrica;</li>
+                    <li><i class="fa-solid fa-check"></i> Medição de resistência e continuidade;</li>
+                    <li><i class="fa-solid fa-check"></i> Diagnóstico de falhas em circuitos industriais e eletrônicos.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/multi/card1_multi.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Circuitos internos especializados convertem as grandezas elétricas em sinais legíveis no display analógico ou digital do aparelho.</p>
+                            <a href="https://www.fluke.com/pt-br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/multi/card2_multi.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Essencial em manutenção elétrica, instalações industriais, eletrônica, bancadas de teste e diagnósticos de equipamentos.</p>
+                            <a href="https://www.fluke.com/pt-br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/multi/card3_multi.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Reúne múltiplas funções de medição em um único instrumento portátil, economizando tempo e recursos no diagnóstico de sistemas elétricos.</p>
+                            <a href="https://www.fluke.com/pt-br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Fluke, Minipa e UNI-T são marcas de referência no segmento de multímetros, com modelos para uso profissional e técnico nas mais diversas aplicações.</p>
+                <img src="./img/logo_icon/logos_multi.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/logo_icon/mobile_logos_multi.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== RELÉ TEMPORIZADOR ===== -->
+        <section id="releTemp">
+            <h2><i class="fa-solid fa-clock"></i> Relé Temporizador</h2>
+            <p class="sec-desc">Dispositivo que controla o acionamento de circuitos elétricos com base em intervalos de tempo programados.</p>
+
+            <div class="img-gallery">
+                <img src="./img/releTemp/slide1_tempo.png" alt="Relé Temporizador vista 1">
+                <img src="./img/releTemp/slide2_tempo.png" alt="Relé Temporizador vista 2">
+                <img src="./img/releTemp/slide3_tempo.png" alt="Relé Temporizador vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O relé temporizador é um componente que introduz o conceito de tempo nos sistemas de automação.
+                    Após receber um sinal de ativação, ele aguarda um intervalo pré-configurado antes de acionar ou
+                    desacionar seus contatos de saída. Pode funcionar com temporização na energização (on-delay),
+                    na desenergização (off-delay) ou em modo intermitente (piscante). É fundamental em sequências
+                    automáticas de máquinas onde etapas precisam ocorrer em momentos específicos.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Controle de tempo em sequências automáticas;</li>
+                    <li><i class="fa-solid fa-check"></i> Partida temporizada de motores;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de processos industriais com intervalos definidos;</li>
+                    <li><i class="fa-solid fa-check"></i> Integração com CLPs e sistemas de comando.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/releTemp/card1_tempo.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Ao ser acionado, o temporizador conta o intervalo configurado e então comuta seus contatos, desencadeando a próxima etapa do processo.</p>
+                            <a href="https://www.nepin.com.br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/releTemp/card2_tempo.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Utilizado em partidas estrela-triângulo de motores, controle de iluminação, processos de aquecimento e sistemas de ventilação temporizada.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/releTemp/card3_tempo.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Automatiza etapas com precisão temporal, reduz a necessidade de intervenção humana e aumenta a eficiência dos processos industriais.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DISJUNTOR MOTOR ===== -->
+        <section id="disMotor">
+            <h2><i class="fa-solid fa-shield-halved"></i> Disjuntor Motor</h2>
+            <p class="sec-desc">Protetor termomagnético desenvolvido especificamente para motores elétricos industriais.</p>
+
+            <div class="img-gallery">
+                <img src="./img/disMotor/slide1_dismot.png" alt="Disjuntor Motor vista 1">
+                <img src="./img/disMotor/slide2_dismot.png" alt="Disjuntor Motor vista 2">
+                <img src="./img/disMotor/slide3_dismot.png" alt="Disjuntor Motor vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O disjuntor motor é uma versão especializada do disjuntor convencional, projetada para atender
+                    às características específicas de motores elétricos — como a alta corrente de partida (que pode
+                    ser 5 a 7 vezes a corrente nominal). Ele combina proteção contra sobrecarga (proteção térmica),
+                    proteção contra curto-circuito (proteção magnética) e a capacidade de ser utilizado também como
+                    dispositivo de acionamento manual do motor, tudo em um único componente compacto.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Proteção térmica e magnética integradas;</li>
+                    <li><i class="fa-solid fa-check"></i> Ajuste de corrente calibrado para o motor;</li>
+                    <li><i class="fa-solid fa-check"></i> Função de acionamento manual incorporada;</li>
+                    <li><i class="fa-solid fa-check"></i> Indicação visual de trip por sobrecarga ou curto.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/disMotor/card1_dismot.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Monitora a corrente do motor continuamente, atuando termicamente em sobrecargas e eletromagneticamente em curtos-circuitos.</p>
+                            <a href="https://www.nepin.com.br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/disMotor/card2_dismot.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Ideal para proteção de motores em bombas, compressores, ventiladores e transportadores industriais de médio e grande porte.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/disMotor/card3_dismot.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Une em um componente as funções de proteção e acionamento, simplificando o projeto do painel e reduzindo custos de instalação.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>WEG, Siemens e Schneider Electric são referências na produção de disjuntores motor para aplicações industriais de alta exigência.</p>
+                <img src="./img/disMotor/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/disMotor/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== RELÉ TÉRMICO ===== -->
+        <section id="releTermico">
+            <h2><i class="fa-solid fa-temperature-high"></i> Relé Térmico</h2>
+            <p class="sec-desc">Dispositivo de proteção que salvaguarda motores elétricos contra sobreaquecimento por sobrecarga.</p>
+
+            <div class="img-gallery">
+                <img src="./img/releTermico/slide1_termico.png" alt="Relé Térmico vista 1">
+                <img src="./img/releTermico/slide2_termico.png" alt="Relé Térmico vista 2">
+                <img src="./img/releTermico/slide3_termico.png" alt="Relé Térmico vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O relé térmico protege motores elétricos contra o superaquecimento causado por sobrecarga prolongada.
+                    Seu funcionamento baseia-se em uma lâmina bimetálica — formada por dois metais com diferentes
+                    coeficientes de dilatação — que se curva quando aquecida pela passagem de corrente excessiva.
+                    Quando a curvatura atinge o limite, ela aciona um mecanismo de disparo que abre o circuito de
+                    comando do contator, desligando o motor antes que ocorra dano permanente ao enrolamento.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Proteção contra sobrecarga prolongada em motores;</li>
+                    <li><i class="fa-solid fa-check"></i> Ajuste de corrente de atuação configurável;</li>
+                    <li><i class="fa-solid fa-check"></i> Rearme manual ou automático após resfriamento;</li>
+                    <li><i class="fa-solid fa-check"></i> Conectado em série ao circuito de potência do motor.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/releTermico/card1_termico.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>A lâmina bimetálica se deforma com o calor gerado pela sobrecorrente e aciona mecanicamente o contato de disparo do relé.</p>
+                            <a href="https://www.nepin.com.br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/releTermico/card2_termico.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usado em conjunto com contatores para proteger motores de bombas, ventiladores, compressores e esteiras contra operação sobrecarregada.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/releTermico/card3_termico.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Custo acessível, fácil ajuste da corrente de disparo, compatibilidade com contatores e efetividade comprovada na proteção de motores.</p>
+                            <a href="https://www.se.com/br" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>WEG, Siemens e Schneider Electric oferecem linhas completas de relés térmicos compatíveis com seus respectivos contatores e disjuntores.</p>
+                <img src="./img/releTermico/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/releTermico/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <span>Enzo Hipolito &mdash; Aprendizagem SENAI &copy; 2026</span>
+            <a href="https://github.com/EnzoHipolito" target="_blank" title="GitHub">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
