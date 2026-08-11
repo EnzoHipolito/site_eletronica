@@ -88,12 +88,83 @@ nav button {
     gap: 6px;
 }
 
-nav button:hover {
+nav > button:hover,
+.dropdown-toggle:hover,
+.dropdown.open .dropdown-toggle {
     background: #f59e0b;
     color: #0f1f3d;
     border-color: #f59e0b;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+}
+
+/* ---- Dropdown ---- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle .seta {
+    font-size: 11px;
+    transition: transform 180ms ease;
+}
+
+.dropdown.open .dropdown-toggle .seta {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 230px;
+    background: #ffffff;
+    border: 1px solid rgba(15, 31, 61, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    padding: 6px;
+    z-index: 200;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu button {
+    width: 100%;
+    height: 38px;
+    padding: 0 12px;
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+    color: #0f1f3d;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-menu button i {
+    width: 16px;
+    text-align: center;
+    color: #f59e0b;
+}
+
+.dropdown-menu button:hover {
+    background: #0f1f3d;
+    color: #ffffff;
+}
+
+.dropdown-menu button:hover i {
+    color: #f59e0b;
+}
+
+.dropdown-menu button.active {
+    background: rgba(245, 158, 11, 0.16);
 }
 
 /* ========================
@@ -798,6 +869,16 @@ span {
         height: 34px;
         font-size: 12px;
         padding: 0 10px;
+    }
+
+    .dropdown-menu {
+        min-width: 200px;
+    }
+
+    /* evita que o menu do último botão escape da tela */
+    .dropdown:last-child .dropdown-menu {
+        left: auto;
+        right: 0;
     }
 
     .home-cards {

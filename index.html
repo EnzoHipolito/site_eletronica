@@ -21,39 +21,57 @@
     </header>
 
     <nav>
-        <button class="nav-btn active" onclick="navegar('home')">
+        <button class="nav-btn" onclick="navegar('home')">
             <i class="fa-solid fa-house"></i> Home
         </button>
-        <button class="nav-btn" onclick="navegar('disjuntor')">
-            <i class="fa-solid fa-bolt"></i> Disjuntor
-        </button>
-        <button class="nav-btn" onclick="navegar('contator')">
-            <i class="fa-solid fa-plug"></i> Contator
-        </button>
-        <button class="nav-btn" onclick="navegar('botoeira')">
-            <i class="fa-solid fa-circle-dot"></i> Botoeira
-        </button>
-        <button class="nav-btn" onclick="navegar('chave')">
-            <i class="fa-solid fa-toggle-on"></i> Chave Manopla
-        </button>
-        <button class="nav-btn" onclick="navegar('sensorFC')">
-            <i class="fa-solid fa-location-crosshairs"></i> Sensor FC
-        </button>
-        <button class="nav-btn" onclick="navegar('motor')">
-            <i class="fa-solid fa-gear"></i> Motor Trifásico
-        </button>
-        <button class="nav-btn" onclick="navegar('multimetro')">
-            <i class="fa-solid fa-gauge-high"></i> Multímetro
-        </button>
-        <button class="nav-btn" onclick="navegar('releTemp')">
-            <i class="fa-solid fa-clock"></i> Relé Temporizador
-        </button>
-        <button class="nav-btn" onclick="navegar('disMotor')">
-            <i class="fa-solid fa-shield-halved"></i> Disjuntor Motor
-        </button>
-        <button class="nav-btn" onclick="navegar('releTermico')">
-            <i class="fa-solid fa-temperature-high"></i> Relé Térmico
-        </button>
+
+        <div class="dropdown">
+            <button class="nav-btn dropdown-toggle" aria-expanded="false">
+                <i class="fa-solid fa-microchip"></i> Componentes
+                <i class="fa-solid fa-caret-down seta"></i>
+            </button>
+            <div class="dropdown-menu">
+                <button onclick="navegar('disjuntor')">
+                    <i class="fa-solid fa-bolt"></i> Disjuntor
+                </button>
+                <button onclick="navegar('contator')">
+                    <i class="fa-solid fa-plug"></i> Contator
+                </button>
+                <button onclick="navegar('botoeira')">
+                    <i class="fa-solid fa-circle-dot"></i> Botoeira
+                </button>
+                <button onclick="navegar('chave')">
+                    <i class="fa-solid fa-toggle-on"></i> Chave Manopla
+                </button>
+                <button onclick="navegar('motor')">
+                    <i class="fa-solid fa-gear"></i> Motor Trifásico
+                </button>
+                <button onclick="navegar('multimetro')">
+                    <i class="fa-solid fa-gauge-high"></i> Multímetro
+                </button>
+                <button onclick="navegar('releTemp')">
+                    <i class="fa-solid fa-clock"></i> Relé Temporizador
+                </button>
+                <button onclick="navegar('disMotor')">
+                    <i class="fa-solid fa-shield-halved"></i> Disjuntor Motor
+                </button>
+                <button onclick="navegar('releTermico')">
+                    <i class="fa-solid fa-temperature-high"></i> Relé Térmico
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="nav-btn dropdown-toggle" aria-expanded="false">
+                <i class="fa-solid fa-satellite-dish"></i> Sensores
+                <i class="fa-solid fa-caret-down seta"></i>
+            </button>
+            <div class="dropdown-menu">
+                <button onclick="navegar('sensorFC')">
+                    <i class="fa-solid fa-location-crosshairs"></i> Fim de Curso
+                </button>
+            </div>
+        </div>
     </nav>
 
     <main>
