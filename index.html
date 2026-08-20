@@ -58,6 +58,12 @@
                 <button onclick="navegar('releTermico')">
                     <i class="fa-solid fa-temperature-high"></i> Relé Térmico
                 </button>
+                <button onclick="navegar('valvulas')">
+                    <i class="fa-solid fa-wind"></i> Válvulas
+                </button>
+                <button onclick="navegar('clp')">
+                    <i class="fa-solid fa-microchip"></i> CLP
+                </button>
             </div>
         </div>
 
@@ -69,6 +75,30 @@
             <div class="dropdown-menu">
                 <button onclick="navegar('sensorFC')">
                     <i class="fa-solid fa-location-crosshairs"></i> Fim de Curso
+                </button>
+                <button onclick="navegar('capacitivo')">
+                    <i class="fa-solid fa-circle-nodes"></i> Capacitivo
+                </button>
+                <button onclick="navegar('indutivo')">
+                    <i class="fa-solid fa-magnet"></i> Indutivo
+                </button>
+                <button onclick="navegar('nivel')">
+                    <i class="fa-solid fa-water"></i> Nível
+                </button>
+                <button onclick="navegar('fotoeletrico')">
+                    <i class="fa-solid fa-lightbulb"></i> Fotoelétrico
+                </button>
+                <button onclick="navegar('ultrassonico')">
+                    <i class="fa-solid fa-wave-square"></i> Ultrassônico
+                </button>
+                <button onclick="navegar('pressao')">
+                    <i class="fa-solid fa-gauge"></i> Pressão
+                </button>
+                <button onclick="navegar('temperatura')">
+                    <i class="fa-solid fa-temperature-half"></i> Temperatura
+                </button>
+                <button onclick="navegar('vazao')">
+                    <i class="fa-solid fa-droplet"></i> Vazão
                 </button>
             </div>
         </div>
@@ -160,6 +190,76 @@
                     <h4>Relé Térmico</h4>
                     <p>Protege motores contra superaquecimento causado por sobrecarga elétrica prolongada, preservando o equipamento.</p>
                     <button class="card-btn" onclick="navegar('releTermico')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h4>Válvulas Solenoide e Pneumática</h4>
+                    <p>Controlam o fluxo de ar comprimido e fluidos em sistemas automatizados por comando elétrico.</p>
+                    <button class="card-btn" onclick="navegar('valvulas')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h4>CLP</h4>
+                    <p>Controlador lógico programável que recebe sinais de sensores e comanda atuadores industriais.</p>
+                    <button class="card-btn" onclick="navegar('clp')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <h4>Sensor Capacitivo</h4>
+                    <p>Detecta materiais metálicos e não metálicos sem contato, ideal para nível e presença de produtos.</p>
+                    <button class="card-btn" onclick="navegar('capacitivo')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-magnet"></i></div>
+                    <h4>Sensor Indutivo</h4>
+                    <p>Detecta objetos metálicos por campo eletromagnético, com resposta rápida e alta robustez.</p>
+                    <button class="card-btn" onclick="navegar('indutivo')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-water"></i></div>
+                    <h4>Sensor de Nível</h4>
+                    <p>Monitora líquidos, grãos e materiais pastosos em tanques, silos e reservatórios industriais.</p>
+                    <button class="card-btn" onclick="navegar('nivel')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4>Sensor Fotoelétrico</h4>
+                    <p>Usa feixes de luz para detectar presença, ausência ou posição de objetos sem contato físico.</p>
+                    <button class="card-btn" onclick="navegar('fotoeletrico')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <h4>Sensor Ultrassônico</h4>
+                    <p>Mede distância e nível por ondas sonoras de alta frequência, independente da cor do objeto.</p>
+                    <button class="card-btn" onclick="navegar('ultrassonico')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-gauge"></i></div>
+                    <h4>Sensor de Pressão</h4>
+                    <p>Converte a pressão de líquidos ou gases em sinal elétrico para monitoramento e controle.</p>
+                    <button class="card-btn" onclick="navegar('pressao')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                    <h4>Sensor de Temperatura</h4>
+                    <p>Mede temperatura de ambientes, superfícies ou fluidos para controle seguro de processos.</p>
+                    <button class="card-btn" onclick="navegar('temperatura')">Acessar</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <h4>Sensor de Vazão</h4>
+                    <p>Mede a quantidade de líquido, gás ou vapor que passa por uma tubulação em determinado tempo.</p>
+                    <button class="card-btn" onclick="navegar('vazao')">Acessar</button>
                 </div>
             </div>
 
@@ -860,6 +960,647 @@
                 <p>WEG, Siemens e Schneider Electric oferecem linhas completas de relés térmicos compatíveis com seus respectivos contatores e disjuntores.</p>
                 <img src="./img/releTermico/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
                 <img src="./img/releTermico/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== VÁLVULAS ===== -->
+        <section id="valvulas">
+            <h2><i class="fa-solid fa-wind"></i> Válvula Solenoide e Pneumática</h2>
+            <p class="sec-desc">Componentes usados para controlar a passagem de fluidos e direcionar ar comprimido em sistemas automatizados.</p>
+
+            <div class="img-gallery">
+                <img src="./img/valvs/slide1_solenoide.png" alt="Válvula solenoide">
+                <img src="./img/valvs/slide2_pneumatica.png" alt="Válvula pneumática">
+                <img src="./img/valvs/slide3_conjunto.png" alt="Conjunto de válvulas">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    A válvula solenoide é um dispositivo eletromecânico que usa uma bobina para gerar campo magnético
+                    e abrir ou fechar a passagem de fluidos. A válvula pneumática direciona o ar comprimido em circuitos
+                    de automação, permitindo comandar cilindros, atuadores e movimentos repetitivos com velocidade e precisão.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Controle elétrico de fluxos em sistemas industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Direcionamento de ar comprimido para atuadores pneumáticos;</li>
+                    <li><i class="fa-solid fa-check"></i> Resposta rápida em ciclos repetitivos de máquinas;</li>
+                    <li><i class="fa-solid fa-check"></i> Integração com CLPs e painéis de comando.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/valvs/card1_sole.png" alt="Solenoide">
+                        <div class="info-card-body">
+                            <h4>Solenoide</h4>
+                            <p>Controla fluidos por acionamento eletromagnético, com baixo consumo, alta durabilidade e resposta adequada para comandos rápidos.</p>
+                            <a href="https://www.youtube.com/watch?v=vRFiyr5IiC4" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/valvs/card2_pneum.png" alt="Pneumática">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usada em sistemas de ar comprimido, máquinas automáticas, linhas de produção, robótica e dispositivos de movimentação industrial.</p>
+                            <a href="https://www.youtube.com/watch?v=pEyK6hErAP4" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/valvs/card3_solepneu.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>A combinação entre comando elétrico e força pneumática oferece velocidade, repetibilidade e manutenção simples em automação industrial.</p>
+                            <a href="https://airtac.ind.br/como-funciona-uma-valvula-solenoide-pneumatica/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>SMC, Festo e Parker Hannifin são fabricantes reconhecidas de válvulas solenoide e pneumáticas para automação, robótica e controle de processos.</p>
+                <img src="./img/valvs/logos.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/valvs/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== CLP ===== -->
+        <section id="clp">
+            <h2><i class="fa-solid fa-microchip"></i> CLP</h2>
+            <p class="sec-desc">Controlador lógico programável responsável por processar sinais e comandar máquinas industriais.</p>
+
+            <div class="img-gallery">
+                <img src="./img/plc/01_slide.png" alt="CLP vista 1">
+                <img src="./img/plc/02_slide.png" alt="CLP vista 2">
+                <img src="./img/plc/03_slide.png" alt="CLP vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O CLP, ou controlador lógico programável, atua como o centro de controle de uma máquina ou processo.
+                    Ele recebe sinais de sensores, processa a lógica programada e aciona saídas como contatores, válvulas,
+                    motores e sinalizadores. O material do repositório também destaca modelos Siemens com alimentação em
+                    24 VDC, entradas e saídas digitais, comunicação PROFINET e programação no TIA Portal.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Controla máquinas e processos industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Recebe sinais de sensores e aciona atuadores;</li>
+                    <li><i class="fa-solid fa-check"></i> Executa lógicas de controle programadas;</li>
+                    <li><i class="fa-solid fa-check"></i> Pode ser expandido com módulos de entrada, saída e comunicação.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/plc/01_card.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Lê entradas digitais ou analógicas, executa o programa gravado na CPU e atualiza as saídas para controlar o processo.</p>
+                            <a href="https://www.siemens.com/br/pt/produtos/automacao/controladores/simatic-s7-1200.html" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/plc/02_card.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Aplicado em painéis elétricos, máquinas automáticas, controle de transportadores, processos industriais e células de automação.</p>
+                            <a href="https://www.siemens.com/br/pt/produtos/automacao/controladores.html" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/plc/03_card.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Oferece confiabilidade, flexibilidade de programação, diagnóstico de falhas e integração com redes industriais modernas.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Siemens, Schneider Electric, Rockwell Automation e WEG estão entre as empresas presentes no mercado de CLPs e soluções de controle industrial.</p>
+                <img src="./img/plc/logos.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/plc/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR CAPACITIVO ===== -->
+        <section id="capacitivo">
+            <h2><i class="fa-solid fa-circle-nodes"></i> Sensor Capacitivo</h2>
+            <p class="sec-desc">Sensor eletrônico que detecta materiais metálicos e não metálicos sem contato físico.</p>
+
+            <div class="img-gallery">
+                <img src="./img/sensorCapacitivo/slide01.png" alt="Sensor capacitivo vista 1">
+                <img src="./img/sensorCapacitivo/slide02.png" alt="Sensor capacitivo vista 2">
+                <img src="./img/sensorCapacitivo/slide03.png" alt="Sensor capacitivo vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O sensor capacitivo detecta presença ou ausência de materiais pela variação de um campo eletrostático.
+                    Por funcionar sem contato físico, é útil para identificar líquidos, grãos, pós, plásticos, vidro e metais
+                    em processos industriais.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Detecta objetos metálicos e não metálicos;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitora nível de líquidos, pós e grãos;</li>
+                    <li><i class="fa-solid fa-check"></i> Verifica conteúdo em embalagens fechadas;</li>
+                    <li><i class="fa-solid fa-check"></i> Atua em linhas de envase e esteiras transportadoras.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/sensorCapacitivo/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Percebe alterações no campo eletrostático causadas pela aproximação do material e converte essa variação em sinal de saída.</p>
+                            <a href="https://www.youtube.com/watch?v=oqJjyCSz-sU" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorCapacitivo/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usado em reservatórios, linhas de embalagem, controle de presença de produtos e detecção através de recipientes não condutores.</p>
+                            <a href="https://www.youtube.com/watch?v=tDywsJ7ElWw" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorCapacitivo/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Tem detecção sem desgaste, boa durabilidade e grande versatilidade por identificar materiais sólidos, líquidos e granulados.</p>
+                            <a href="https://www.weg.net" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Turck, Pepperl+Fuchs, Sick, Balluff e Carlo Gavazzi são referências citadas para sensores capacitivos industriais.</p>
+                <img src="./img/sensorCapacitivo/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/sensorCapacitivo/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR INDUTIVO ===== -->
+        <section id="indutivo">
+            <h2><i class="fa-solid fa-magnet"></i> Sensor Indutivo</h2>
+            <p class="sec-desc">Sensor de proximidade que detecta objetos metálicos por campo eletromagnético.</p>
+
+            <div class="img-gallery">
+                <img src="./img/indutivo/slide01_indutivo.png" alt="Sensor indutivo vista 1">
+                <img src="./img/indutivo/slide02_indutivo.png" alt="Sensor indutivo vista 2">
+                <img src="./img/indutivo/slide03_indutivo.png" alt="Sensor indutivo vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O sensor indutivo gera um campo eletromagnético de alta frequência na face sensora. Quando um objeto
+                    metálico entra nesse campo, ocorre alteração na oscilação interna, que é convertida em sinal elétrico
+                    para indicar presença ou posição.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Detecta posição em atuadores e cilindros;</li>
+                    <li><i class="fa-solid fa-check"></i> Realiza contagem de peças metálicas;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitora rotação e velocidade de eixos;</li>
+                    <li><i class="fa-solid fa-check"></i> Opera bem em ambientes com poeira, óleo e umidade.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/indutivo/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>A aproximação de metal altera o campo eletromagnético do sensor, gerando uma comutação rápida na saída.</p>
+                            <a href="https://www.youtube.com/watch?v=gt-QSowz-6M" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/indutivo/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usado em máquinas, esteiras, eixos, motores e sistemas de posicionamento que dependem da detecção de peças metálicas.</p>
+                            <a href="https://www.youtube.com/watch?v=20iA94oiJuI" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/indutivo/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Não possui contato mecânico, tem alta durabilidade, boa resistência industrial e resposta rápida.</p>
+                            <a href="https://www.makerhero.com/blog/como-funciona-o-sensor-indutivo/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Sick, Balluff, Turck, Pepperl+Fuchs e Omron aparecem como referências em sensores indutivos para automação industrial.</p>
+                <img src="./img/indutivo/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/indutivo/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR DE NÍVEL ===== -->
+        <section id="nivel">
+            <h2><i class="fa-solid fa-water"></i> Sensor de Nível</h2>
+            <p class="sec-desc">Dispositivo usado para monitorar líquidos, sólidos granulados ou pastosos em tanques, silos e reservatórios.</p>
+
+            <div class="img-gallery">
+                <img src="./img/nivel/slide01_nivel.png" alt="Sensor de nível vista 1">
+                <img src="./img/nivel/slide02_nivel.png" alt="Sensor de nível vista 2">
+                <img src="./img/nivel/slide03_nivel.png" alt="Sensor de nível vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    Sensores de nível indicam ou medem a quantidade de material dentro de tanques, silos e reservatórios.
+                    Podem ser aplicados para controle pontual, alarmes de mínimo e máximo ou medição contínua, conforme
+                    o processo e o tipo de material monitorado.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Controle de nível em reservatórios de água;</li>
+                    <li><i class="fa-solid fa-check"></i> Detecção em tanques da indústria química;</li>
+                    <li><i class="fa-solid fa-check"></i> Medição em silos de grãos;</li>
+                    <li><i class="fa-solid fa-check"></i> Prevenção de transbordamento ou operação a seco.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/nivel/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Detecta a altura do material por tecnologias adequadas ao processo, enviando sinal para controle, alarme ou monitoramento.</p>
+                            <a href="https://www.youtube.com/watch?v=ynuzm9W8i4I" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/nivel/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Utilizado em água, produtos químicos, grãos, silos, reservatórios industriais e sistemas de abastecimento.</p>
+                            <a href="https://www.youtube.com/watch?v=bYKIrOiV9hk" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/nivel/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Aumenta a segurança do processo, reduz desperdícios e permite automação precisa do enchimento e esvaziamento.</p>
+                            <a href="https://www.sick.com/br/pt/sensores-de-nivel/c/g187052" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>O material visual incluído apresenta fabricantes do setor de automação e instrumentação que oferecem soluções para medição e controle de nível.</p>
+                <img src="./img/nivel/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/nivel/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR FOTOELÉTRICO ===== -->
+        <section id="fotoeletrico">
+            <h2><i class="fa-solid fa-lightbulb"></i> Sensor Fotoelétrico</h2>
+            <p class="sec-desc">Dispositivo que usa luz para detectar presença, ausência ou posição de objetos sem contato físico.</p>
+
+            <div class="img-gallery">
+                <img src="./img/fotoeletrico/slide01.png" alt="Sensor fotoelétrico vista 1">
+                <img src="./img/fotoeletrico/slide02.png" alt="Sensor fotoelétrico vista 2">
+                <img src="./img/fotoeletrico/slide03.png" alt="Sensor fotoelétrico vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O sensor fotoelétrico trabalha com um emissor de luz e um receptor. A detecção ocorre quando o feixe
+                    é interrompido, refletido por um espelho ou refletido pelo próprio objeto, nos modos barreira,
+                    reflexivo e difuso.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Detecção de objetos em esteiras transportadoras;</li>
+                    <li><i class="fa-solid fa-check"></i> Sistemas de segurança e portas automáticas;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de posição em máquinas e robôs;</li>
+                    <li><i class="fa-solid fa-check"></i> Identificação rápida sem contato mecânico.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/fotoeletrico/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Emite luz e identifica sua interrupção ou reflexão, adaptando o modo de operação à distância e ao objeto detectado.</p>
+                            <a href="https://www.blog.sense.com.br/2019/02/sensores-fotoeletricos-o-que-sao-quais.html" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/fotoeletrico/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Presente em esteiras, barreiras de luz, máquinas de embalagem, portas automáticas e controle de posicionamento.</p>
+                            <a href="https://www.youtube.com/watch?v=l1rjErRvbgw" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/fotoeletrico/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Oferece longo alcance, resposta rápida e detecção sem desgaste, podendo identificar objetos de diferentes cores e materiais.</p>
+                            <a href="https://www.youtube.com/watch?v=Ie3eW_BA28U" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>Sick, Banner Engineering e Omron são fabricantes citadas para sensores fotoelétricos usados em linhas de produção automatizadas.</p>
+                <img src="./img/fotoeletrico/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/fotoeletrico/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR ULTRASSÔNICO ===== -->
+        <section id="ultrassonico">
+            <h2><i class="fa-solid fa-wave-square"></i> Sensor Ultrassônico</h2>
+            <p class="sec-desc">Sensor que usa ondas sonoras de alta frequência para detectar objetos, medir distâncias e monitorar níveis.</p>
+
+            <div class="img-gallery">
+                <img src="./img/ultra/slide02.png" alt="Sensor ultrassônico vista 1">
+                <img src="./img/ultra/slide01_ultra.png" alt="Sensor ultrassônico vista 2">
+                <img src="./img/ultra/slide03_ultra.png" alt="Sensor ultrassônico vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    O sensor ultrassônico emite ondas sonoras acima da faixa audível e mede o tempo de retorno do eco.
+                    Com isso, calcula distância, detecta presença e monitora nível sem depender da cor ou transparência
+                    do objeto.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Medição de nível em tanques e silos;</li>
+                    <li><i class="fa-solid fa-check"></i> Detecção em ambientes com poeira ou fumaça;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de presença em sistemas de embalagem;</li>
+                    <li><i class="fa-solid fa-check"></i> Medição de distância sem contato físico.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/ultra/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Calcula a distância pelo tempo entre a emissão do pulso ultrassônico e o retorno do eco recebido pelo sensor.</p>
+                            <a href="https://www.youtube.com/watch?v=rUyc5a7kQww" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/ultra/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usado em controle de nível, detecção de objetos, monitoramento de distância e automação de embalagens.</p>
+                            <a href="https://www.youtube.com/watch?v=m_J6GpBJrgg" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/ultra/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Detecta sem contato, funciona com materiais variados e não depende da cor, brilho ou transparência do alvo.</p>
+                            <a href="https://www.sick.com/br/pt/sensores-ultrassonicos/c/g185752" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>O material visual incluído apresenta fabricantes do setor de automação que fornecem sensores ultrassônicos para medição, presença e controle de nível.</p>
+                <img src="./img/ultra/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/ultra/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR DE PRESSÃO ===== -->
+        <section id="pressao">
+            <h2><i class="fa-solid fa-gauge"></i> Sensor de Pressão</h2>
+            <p class="sec-desc">Sensor que monitora a pressão de líquidos e gases, convertendo a grandeza física em sinal elétrico.</p>
+
+            <div class="img-gallery">
+                <img src="./img/senPressao/slide1.png" alt="Sensor de pressão vista 1">
+                <img src="./img/senPressao/slide02_pressao.png" alt="Sensor de pressão vista 2">
+                <img src="./img/senPressao/slide3.png" alt="Sensor de pressão vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    Sensores de pressão medem a força exercida por líquidos ou gases em tubulações, reservatórios e
+                    sistemas industriais. O valor medido é convertido em sinal elétrico para indicação, controle,
+                    intertravamento ou supervisão por CLP.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Medição da pressão de líquidos e gases;</li>
+                    <li><i class="fa-solid fa-check"></i> Conversão da pressão em sinal elétrico;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitoramento de tubulações e reservatórios;</li>
+                    <li><i class="fa-solid fa-check"></i> Integração com CLPs e sistemas de automação.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/senPressao/card1.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Transforma a deformação causada pela pressão em um sinal elétrico proporcional, usado pelo sistema de controle.</p>
+                            <a href="https://www.youtube.com/watch?v=EHyLjs4yXMg" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/senPressao/card2.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Empregado em hidráulica, pneumática, caldeiras, bombas, compressores, reservatórios e linhas de processo.</p>
+                            <a href="https://www.youtube.com/watch?v=7y8L3e5WTd0" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/senPressao/card3.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Permite controle preciso, aumenta a segurança operacional e ajuda a evitar falhas por excesso ou falta de pressão.</p>
+                            <a href="https://www.ifm.com/br/pt/category/040/040_010" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>O material visual incluído apresenta fabricantes do setor de instrumentação que atuam com sensores e transmissores de pressão industriais.</p>
+                <img src="./img/senPressao/logos.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/senPressao/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR DE TEMPERATURA ===== -->
+        <section id="temperatura">
+            <h2><i class="fa-solid fa-temperature-half"></i> Sensor de Temperatura</h2>
+            <p class="sec-desc">Dispositivo que mede temperatura de ambientes, superfícies ou fluidos e envia sinal para monitoramento e controle.</p>
+
+            <div class="img-gallery">
+                <img src="./img/sensorTemperaturaIndustrial/slide01.png" alt="Sensor de temperatura vista 1">
+                <img src="./img/sensorTemperaturaIndustrial/slide02.png" alt="Sensor de temperatura vista 2">
+                <img src="./img/sensorTemperaturaIndustrial/slide03.png" alt="Sensor de temperatura vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    Sensores de temperatura convertem variações térmicas em sinais elétricos para controle de processos.
+                    São usados em ambientes, superfícies e fluidos, permitindo supervisão de aquecimento, refrigeração e
+                    condições seguras de operação.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Controle de processos industriais;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitoramento de câmaras frigoríficas e cadeia do frio;</li>
+                    <li><i class="fa-solid fa-check"></i> Sistemas de climatização e HVAC;</li>
+                    <li><i class="fa-solid fa-check"></i> Proteção de equipamentos contra sobretemperatura.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/sensorTemperaturaIndustrial/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Mede variações térmicas por elementos sensores e envia um sinal que pode ser lido por controladores e indicadores.</p>
+                            <a href="https://www.youtube.com/watch?v=ryPei3-yN5g" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorTemperaturaIndustrial/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Aplicado em fornos, câmaras frias, HVAC, máquinas, tanques aquecidos e linhas de processo com controle térmico.</p>
+                            <a href="https://www.youtube.com/watch?v=eK8nFuQY0Zs" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/sensorTemperaturaIndustrial/card03.png" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Melhora a estabilidade do processo, evita danos por calor excessivo e permite automação do controle térmico.</p>
+                            <a href="https://www.ifm.com/br/pt/category/040/040_020" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>O material visual incluído apresenta fabricantes de automação e instrumentação com soluções para medição de temperatura em processos industriais.</p>
+                <img src="./img/sensorTemperaturaIndustrial/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/sensorTemperaturaIndustrial/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
+            </div>
+        </section>
+
+        <!-- ===== SENSOR DE VAZÃO ===== -->
+        <section id="vazao">
+            <h2><i class="fa-solid fa-droplet"></i> Sensor de Vazão</h2>
+            <p class="sec-desc">Dispositivo que mede a quantidade de líquido, gás ou vapor que passa por uma tubulação em determinado intervalo de tempo.</p>
+
+            <div class="img-gallery">
+                <img src="./img/vazao/slide01.png" alt="Sensor de vazão vista 1">
+                <img src="./img/vazao/slide02.png" alt="Sensor de vazão vista 2">
+                <img src="./img/vazao/slide03.png" alt="Sensor de vazão vista 3">
+            </div>
+
+            <div class="content-block">
+                <h3>Conceito e Funcionamento</h3>
+                <p>
+                    Sensores de vazão medem o fluxo de líquidos, gases ou vapor em tubulações. Essa medição permite
+                    controlar consumo, dosagem, abastecimento e segurança de processos que dependem de circulação
+                    contínua ou volume controlado.
+                </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Distribuição de água tratada;</li>
+                    <li><i class="fa-solid fa-check"></i> Dosagem de ingredientes na indústria alimentícia;</li>
+                    <li><i class="fa-solid fa-check"></i> Monitoramento de vapor em caldeiras;</li>
+                    <li><i class="fa-solid fa-check"></i> Controle de gases em laboratórios e hospitais.</li>
+                </ul>
+            </div>
+
+            <div class="cards-section">
+                <h3>Informações Complementares</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="./img/vazao/card01.png" alt="Funcionamento">
+                        <div class="info-card-body">
+                            <h4>Funcionamento</h4>
+                            <p>Mede a passagem do fluido por princípios adequados à aplicação, gerando sinal proporcional à vazão instantânea ou acumulada.</p>
+                            <a href="https://www.youtube.com/watch?v=aA7oXFx4Dio" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/vazao/card02.png" alt="Aplicações">
+                        <div class="info-card-body">
+                            <h4>Aplicações</h4>
+                            <p>Usado em água, vapor, gases, dosagem de produtos, controle de caldeiras e processos alimentícios ou químicos.</p>
+                            <a href="https://www.youtube.com/watch?v=HfSgsq5Mrdk" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img/vazao/card03.jpeg" alt="Vantagens">
+                        <div class="info-card-body">
+                            <h4>Vantagens</h4>
+                            <p>Permite controle preciso de consumo e dosagem, reduz perdas e melhora a rastreabilidade do processo.</p>
+                            <a href="https://www.endress.com/pt/instrumentacao-campo/medicao-vazao" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa-section">
+                <h3>Principais Fabricantes</h3>
+                <p>O material visual incluído apresenta fabricantes do setor de instrumentação que oferecem soluções para medição de vazão em processos industriais.</p>
+                <img src="./img/vazao/empresas_logos_btn.svg" alt="Logos fabricantes" class="logo-svg desktop-only">
+                <img src="./img/vazao/mobile_empresas_logos.svg" alt="Logos fabricantes" class="logo-svg mobile-only">
             </div>
         </section>
 
